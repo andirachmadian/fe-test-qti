@@ -1,25 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import Login from '../src/pages/Login';
+import Navbar from '../src/layout/Navbar';
+import TableUser from './pages/TableUser';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className='container is-fullhd'>
+        <h3 className='is-size-3 has-text-weight-bold'>Data User</h3>
+        <TableUser />
+      </div>
+    </>
   );
 }
 
